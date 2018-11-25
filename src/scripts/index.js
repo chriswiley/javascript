@@ -1,5 +1,17 @@
 import '../scss/main.scss'
 
+let o1 = { a: 1 }
+let o2 = { b: 2 }
+let o3 = { c: 3 }
+
+let obj = Object.assign({ name: 'Chris' }, o1, o2, o3)
+console.log(obj)
+console.log(o1)
+console.log(o2)
+console.log(o3)
+
+
+
 const barker = (state) => ({
   bark: () => console.log(`Bark! I am ${state.name}`)
 })
@@ -20,7 +32,7 @@ const raceCarDog = (name) => {
     driver(state)
   )
 }
-raceCarDog('Jack').drive()
+console.log(raceCarDog('Jack').bark())
 
 
 // const fizzBuzzArray = []
@@ -28,11 +40,11 @@ raceCarDog('Jack').drive()
 // const fizzBuzz = function (num) {
 //   for (let i = 0; i <= num; i++) {
 //     if (i % 3 === 0 && i % 5 === 0) {
-//       fizzBuzzArray.push(`${i} fizzbuzz`)
+//       fizzBuzzArray.push(`${ i } fizzbuzz`)
 //     } else if (i % 3 === 0) {
-//       fizzBuzzArray.push(`${i} fizz`)
+//       fizzBuzzArray.push(`${ i } fizz`)
 //     } else if (i % 5 === 0) {
-//       fizzBuzzArray.push(`${i} buzz`)
+//       fizzBuzzArray.push(`${ i } buzz`)
 //     }
 //   }
 // }
@@ -63,7 +75,7 @@ raceCarDog('Jack').drive()
 
 // const createPerson = (name, age, location) => {
 //   return {
-//     personInfo: () => `${name} is ${age} and lives in ${location}. Isn't that kewl?`,
+//     personInfo: () => `${ name } is ${ age } and lives in ${ location }.Isn't that kewl?`,
 //     personGreet: () => `Hello, my name is ${name}`,
 //     personLocation: () => `Yeah, I live in ${location}`,
 //     personAge: () => `Oh, I am only ${age}`
