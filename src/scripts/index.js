@@ -1,4 +1,5 @@
 import '../scss/main.scss'
+import * as message from './module1'
 
 let o1 = { a: 1 }
 let o2 = { b: 2 }
@@ -9,6 +10,8 @@ console.log(obj)
 console.log(o1)
 console.log(o2)
 console.log(o3)
+console.log(message.message)
+
 
 
 
