@@ -32,7 +32,15 @@ const raceCarDog = (name) => {
     driver(state)
   )
 }
-console.log(raceCarDog('Jack').bark())
+const jack = raceCarDog('Jack')
+const jane = raceCarDog('Jane')
+jack.bark()
+jack.drive()
+jane.bark()
+jane.drive()
+console.log(jack)
+
+
 
 
 // const fizzBuzzArray = []
